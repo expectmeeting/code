@@ -1,0 +1,1 @@
+cmd_/root/wp/code/linux-os/phy-memory/phy-memory.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /root/wp/code/linux-os/phy-memory/phy-memory.ko /root/wp/code/linux-os/phy-memory/phy-memory.o /root/wp/code/linux-os/phy-memory/phy-memory.mod.o ;  true
