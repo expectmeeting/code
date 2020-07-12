@@ -4,4 +4,5 @@
 # dir
  |- ./
    |- module-pattern 内核模块模板程序
+   |- print 内核打印验证模块
 ~~~
