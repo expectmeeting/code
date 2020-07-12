@@ -5,4 +5,6 @@
  |- ./
    |- module-pattern 内核模块模板程序
    |- print 内核打印验证模块
+   |- memory-map 直观感受内核如何管理虚拟内存
+   |- phy-memory 直观感受内核如何管理物理内存
 ~~~
