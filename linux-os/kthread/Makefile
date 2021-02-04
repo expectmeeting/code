@@ -1,4 +1,4 @@
-obj-m += module-pattern.o
+obj-m += kthread.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build/ M=$(shell pwd) modules

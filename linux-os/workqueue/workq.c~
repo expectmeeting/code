@@ -1,0 +1,35 @@
+/*************************************************************************
+    > File Name: vm-to-pm.c
+    > Author: wp 
+    > Mail: 
+    > Created Time: 2020年05月11日 星期一 21时41分13秒
+ ************************************************************************/
+
+#include<linux/module.h>
+#include<linux/sched.h>
+#include<linux/time.h>
+#include<linux/workqueue.h>
+
+void task(struct work_struct *work)
+{
+     printk("current worker thread ID: %d, %lu", current->pid, jiffies);
+}
+
+static int __init start(void)
+{
+	DECLARE_WORK(mytask,task);
+
+	if (system_wq)
+		schedule_work(&mytask);
+	printk("hello world");
+	return 0;
+}
+module_init(start);
+
+static void __exit end(void)
+{
+	printk("bye");
+}
+module_exit(end);
+
+MODULE_LICENSE("GPL");

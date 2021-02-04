@@ -14,6 +14,9 @@ module_param(pid, int, 0644);
 
 static int __init start(void)
 {
+	int pid = 10;
+	printk("pid:%d",pid);
+	/*
 	struct task_struct *pcur;
 	struct vm_area_struct *p;
 
@@ -37,6 +40,7 @@ static int __init start(void)
 
 		}
 	}
+	*/
 	return 0;
 }
 module_init(start);

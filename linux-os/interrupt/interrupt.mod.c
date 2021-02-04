@@ -26,13 +26,10 @@ static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
 	{ 0x3dd7ab86, "module_layout" },
-	{ 0x788d933e, "param_ops_int" },
+	{ 0xc1514a3b, "free_irq" },
 	{ 0xdb7305a1, "__stack_chk_fail" },
-	{ 0x8ff4079b, "pv_irq_ops" },
-	{ 0xdaf485b9, "pv_lock_ops" },
-	{ 0x47941711, "_raw_spin_lock_irq" },
+	{ 0xd6b8e852, "request_threaded_irq" },
 	{ 0x7c32d0f0, "printk" },
-	{ 0x5758fda9, "node_data" },
 	{ 0xbdfb6dbb, "__fentry__" },
 };
 
@@ -42,4 +39,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "DA4F80714DE9C880145C203");
+MODULE_INFO(srcversion, "AE180EFAC199F433DB2B225");
